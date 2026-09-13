@@ -23,6 +23,7 @@ conda activate bageti
 
 # (Optional) Launch JupyterLab to run notebooks
 jupyter lab
+```
 
 ## Core Scripts
 
