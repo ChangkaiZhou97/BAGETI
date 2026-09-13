@@ -41,7 +41,7 @@ The R wrapper automatically compiles the C++ backend through `Rcpp::sourceCpp()`
 
 ## Examples
 
-A reproducible simulation example is provided in:
+A reproducible simulation example is provided in
 
 ```text
 toy example/simulation1.ipynb
