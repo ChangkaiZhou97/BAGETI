@@ -23,3 +23,24 @@ conda activate bageti
 
 # (Optional) Launch JupyterLab to run notebooks
 jupyter lab
+
+## Core Scripts
+
+The core implementation of BAGETI is provided in the `script/` directory.
+
+- **`BAGUTTE_main.R`**  
+  Main R interface for BAGETI. This script organizes spatial locations into directional transects, constructs neighboring-transect relationships, runs the red-black updating scheme, aggregates posterior change-point estimates, and returns inferred boundaries and associated posterior summaries.
+
+- **`BAGETI.cpp`**  
+  C++ computational backend called through `Rcpp`. It implements the core Bayesian change-point inference, including the negative-binomial likelihood, reversible-jump MCMC updates, spatial MRF coupling between neighboring transects, and posterior parameter calculations.
+
+The R wrapper automatically compiles the C++ backend through `Rcpp::sourceCpp()`. Therefore, both files should remain together in the `script/` directory.
+
+---
+
+## Toy Simulation
+
+A reproducible simulation example is provided in:
+
+```text
+toy example/simulation1.ipynb
