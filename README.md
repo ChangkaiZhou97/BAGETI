@@ -39,9 +39,16 @@ The R wrapper automatically compiles the C++ backend through `Rcpp::sourceCpp()`
 
 ---
 
-## Toy Simulation
+## Examples
 
 A reproducible simulation example is provided in:
 
 ```text
 toy example/simulation1.ipynb
+```
+
+The HCC-3L case with data is in 
+```text
+data/HCC-3L.tar.gz
+case/HCC example.ipynb
+```
